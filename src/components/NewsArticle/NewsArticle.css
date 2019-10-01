@@ -1,0 +1,13 @@
+h2 {
+    font-size: 1em;
+}
+
+img {
+    height: 20vh;
+    width: 300px;
+}
+
+.news-article {
+    background-color: white;
+    height: 40vh;
+}
