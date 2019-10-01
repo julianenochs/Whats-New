@@ -14,9 +14,14 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      local,
+      health,
+      entertainment,
+      science,
+      technology,
       currentState: local
     }
-    console.log('this.state', this.state)
+    console.log('this.state', this.state.currentState)
   }
 
   updateState = (newState) => {
@@ -24,7 +29,7 @@ class App extends Component {
   }
 
   render () {
-    console.log('currentState', this.state.currentState)
+    console.log('currentState', this.state['currentState'])
     return (
       <div className='app'>
         <header>

@@ -6,13 +6,19 @@ import './Menu.css'
 class Menu extends Component {
     constructor() {
         super();
-        this.state = { local }
+        this.state = { 
+            id: Date.now(),
+            headline: '',
+            img: '',
+            description: '',
+            url: '',
+         }
     }
 
     handleNews = (event) => {
         event.preventDefault();
         const newState = [event.target.name]
-        this.props.updateState(newState)
+        this.props.updateState(newState[0])
     }
 
     render() {
