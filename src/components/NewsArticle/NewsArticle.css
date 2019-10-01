@@ -1,13 +1,31 @@
 h2 {
-    font-size: 1em;
+    font-size: 1.4em;
+    padding: 10px;
 }
 
 img {
-    height: 20vh;
-    width: 300px;
+    height: 30vh;
+    width: 100%;
 }
 
 .news-article {
     background-color: white;
-    height: 40vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+    margin: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.article-link {
+    background-color: #A9A1B5;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
 }

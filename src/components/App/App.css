@@ -5,9 +5,34 @@
 }
 
 .app {
+  background: #646F4B;
+}
+
+header {
   display: flex;
-  background: #141527;
-  height: 100vh;
-  text-align: center;
+  height: 10vh;
   width: 100%;
+}
+
+h1 {
+  color: #DABECA;
+  font-size: 2.5em;
+}
+
+.title-change {
+  color: #BF8B85;
+}
+
+body {
+  display: flex;
+}
+
+nav {
+  width: 20%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
 }

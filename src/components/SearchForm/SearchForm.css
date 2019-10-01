@@ -1,0 +1,7 @@
+.search-field {
+    height: 6vh;
+    width: 100%;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 10px;
+}

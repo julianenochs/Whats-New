@@ -18,11 +18,11 @@ class Menu extends Component {
     render() {
         return (
             <aside>
-                <button name='local' onClick={event => this.handleNews(event)}>Local News</button>
-                <button name='health' onClick={event => this.handleNews(event)}>Health</button>
-                <button name='entertainment' onClick={event => this.handleNews(event)}>Entertainment</button>
-                <button name='science' onClick={event => this.handleNews(event)}>Science</button>
-                <button name='technology' onClick={event => this.handleNews(event)}>Technology</button>
+                <button className='nav-buttons' name='local' onClick={event => this.handleNews(event)}>Local News</button>
+                <button className='nav-buttons' name='health' onClick={event => this.handleNews(event)}>Health</button>
+                <button className='nav-buttons' name='entertainment' onClick={event => this.handleNews(event)}>Entertainment</button>
+                <button className='nav-buttons' name='science' onClick={event => this.handleNews(event)}>Science</button>
+                <button className='nav-buttons' name='technology' onClick={event => this.handleNews(event)}>Technology</button>
             </aside>
         )
     }

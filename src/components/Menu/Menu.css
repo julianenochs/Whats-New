@@ -1,0 +1,13 @@
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-buttons {
+    border: solid 2px black;
+    border-radius: 0px 20px 20px 0px;
+    height: 7vh;
+    font-size: 1em;
+    margin: 10px 0px;
+    width: 80%;
+}
