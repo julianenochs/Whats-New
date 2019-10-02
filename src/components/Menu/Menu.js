@@ -1,37 +1,22 @@
-import React, { Component }from 'react';
+import React from 'react';
 import local from '../../data/local';
-
+import health from '../../data/health';
+import entertainment from '../../data/entertainment';
+import science from '../../data/science';
+import technology from '../../data/technology';
 import './Menu.css'
 
-class Menu extends Component {
-    constructor() {
-        super();
-        this.state = { 
-            id: Date.now(),
-            headline: '',
-            img: '',
-            description: '',
-            url: '',
-         }
-    }
-
-    handleNews = (event) => {
-        event.preventDefault();
-        const newState = [event.target.name]
-        this.props.updateState(newState[0])
-    }
-
-    render() {
-        return (
-            <aside>
-                <button className='nav-buttons' name='local' onClick={event => this.handleNews(event)}>Local News</button>
-                <button className='nav-buttons' name='health' onClick={event => this.handleNews(event)}>Health</button>
-                <button className='nav-buttons' name='entertainment' onClick={event => this.handleNews(event)}>Entertainment</button>
-                <button className='nav-buttons' name='science' onClick={event => this.handleNews(event)}>Science</button>
-                <button className='nav-buttons' name='technology' onClick={event => this.handleNews(event)}>Technology</button>
-            </aside>
-        )
-    }
+const Menu = ({updateState}) => {
+    return (
+        <aside>
+            <button className='nav-buttons' onClick={() => updateState(local)}>Local News</button>
+            <button className='nav-buttons' onClick={() => updateState(health)}>Health</button>
+            <button className='nav-buttons' onClick={() => updateState(entertainment)}>Entertainment</button>
+            <button className='nav-buttons' onClick={() => updateState(science)}>Science</button>
+            <button className='nav-buttons' onClick={() => updateState(technology)}>Technology</button>
+        </aside>
+    )
 }
+
 
 export default Menu;
