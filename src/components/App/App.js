@@ -24,12 +24,12 @@ class App extends Component {
   }
 
   updateState = (newState) => {
+    console.log('new state', newState)
     this.setState({ currentState : [newState][0] })
-    console.log('newState', newState)
   }
 
   render () {
-    console.log('currentState', this.state.currentState[0])
+    console.log('current state', this.state.currentState)
     return (
       <div className='app'>
         <header>
@@ -42,7 +42,6 @@ class App extends Component {
         </nav>
         <main>
         <NewsContainer  news={this.state.currentState} />
-        <NewsArticle />
         </main>
         </div>
       </div>
