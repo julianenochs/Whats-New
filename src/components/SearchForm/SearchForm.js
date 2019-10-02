@@ -11,10 +11,10 @@ class SearchForm extends Component {
             <form>
                 <input
                     type='text'
-                    className='search-field'
+                    className='search__field'
                     placeholder='Search for news articles here.'
                     name='search' />
-                <button>Search Now</button>
+                <button className='search__button'>Search Now</button>
             </form>
         )
     }
