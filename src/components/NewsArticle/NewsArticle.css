@@ -4,20 +4,21 @@ h2 {
 }
 
 img {
+    border-radius: 10px 10px 0px 0px;
     height: 30vh;
     width: 100%;
 }
 
 .news-article {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 55vh;
     justify-content: space-between;
     margin: 10px;
     text-align: center;
-    width: 45%;
+    width: 40%;
 }
 
 .article-link {
