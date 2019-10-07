@@ -4,6 +4,7 @@ import NewsContainer from './NewsContainer';
 
 describe('News Container', () => {
     it('should match the snapshot with all data passed in correctly', () => {
+
         const wrapper = shallow(<NewsContainer
             key={69}
             headline='Party on Garth'
