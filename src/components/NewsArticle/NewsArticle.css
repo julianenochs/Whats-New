@@ -17,12 +17,14 @@ img {
     height: 55vh;
     justify-content: space-between;
     margin: 10px;
+    padding: 10px;
     text-align: center;
     width: 40%;
 }
 
 .article-link {
     background-color: #A9A1B5;
+    border-radius: 5px;
     color: white;
     font-size: 1.2em;
     margin-bottom: 0px;
