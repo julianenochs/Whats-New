@@ -41,7 +41,7 @@ class App extends Component {
         <Menu updateState={this.updateState} />
         </nav>
         <main>
-        <NewsContainer  news={this.state.currentState} />
+        <NewsContainer news={this.state.currentState} />
         </main>
         </div>
       </div>
